@@ -34,11 +34,19 @@ Metadata items is the mean, over the 49 items the reference fills, of the share 
 
 ## NWB Inspector (DANDI configuration)
 
+Distinct issues: Inspector messages with the same check, neurodata type and object path count once, however many files they appear in.
+
 | | Opus 4.5 vanilla | Opus 4.5 skill | Opus 5.5 vanilla | Opus 5.5 skill |
 |---|---|---|---|---|
 | Critical issues | 0 | 0 | 0 | 0 |
-| Best-practice violations | 76 | 3 | 0 | 0 |
-| Best-practice suggestions | 0 | 1,345 | 4,806 | 4,835 |
+| Best-practice violations | 4 | 1 | 0 | 0 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Timestamps not ascending | 3 | 0 | 0 | 0 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Regular timestamps stored explicitly | 1 | 1 | 0 | 0 |
+| Best-practice suggestions | 0 | 3 | 2 | 7 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Missing description | 0 | 2 | 0 | 0 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Single-row table | 0 | 1 | 2 | 5 |
+| &nbsp;&nbsp;&nbsp;&nbsp;All-NaN column | 0 | 0 | 0 | 1 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Non-standard processing module name | 0 | 0 | 0 | 1 |
 | Duplicate object identifiers | 0 | 69 | 0 | 0 |
 
 ## Edge cases
